@@ -3,7 +3,7 @@
  * Plugin Name: Simple Page Access Manager - Restrict Pages/Posts by User Role
  * Plugin URI: https://github.com/decorvus/simple-page-access-manager
  * Description: Enable user role restriction per page or post.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: decorvus
  * Author URI: https://github.com/decorvus/simple-page-access-manager
  */
@@ -44,7 +44,7 @@ if(!function_exists('sam_meta_init') && !function_exists('sam_meta_init') && !fu
         $current_screen = get_current_screen()->id; //current post type slug
         $allowed_post_types = get_option('allowed_post_types');
         if(in_array($current_screen, $allowed_post_types)){
-            add_action( 'add_meta_boxes', 'sam_add_post_meta_boxes' );
+            add_action( 'add_meta_boxes', 'sam_add_post_meta_boxes' );  
             wp_enqueue_style('sam-custom-styles', SAM_PLUGIN_PATH.'css/admin-styles.css');
         }
         add_action( 'save_post', 'sam_save_post_meta', 10, 2 );
