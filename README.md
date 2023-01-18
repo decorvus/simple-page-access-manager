@@ -1,4 +1,4 @@
-# Page Role Restriction
+# Simple Page Access Manager
 Adds the option to restrict page access by role and show a custom error message.
 <div style="text-align: center;">
 <img src="https://i.imgur.com/kl4T2Ej.png" style="margin-bottom: 30px;">
