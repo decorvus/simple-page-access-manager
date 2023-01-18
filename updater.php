@@ -1,5 +1,5 @@
 <?php
-class Page_role_restriction_updater {
+class Simple_page_access_manager_updater {
     protected $file;
     protected $plugin;
     protected $basename;

@@ -1,5 +1,5 @@
 :root{
-    --acc-primary-color: #2271b1;
+    --sam-primary-color: #2271b1;
 }
 .access-manager-wrapper{
     display: grid;
@@ -38,9 +38,9 @@
     font-weight: 700;
     box-shadow: 0 0 30px 0 rgb(0 0 0 / 10%);
 }
-.acc-page-options div.schedule-wrap[show='false'],
+.sam-page-options div.schedule-wrap[show='false'],
 .access-manager-wrapper .form-table td[show='false']{display: none;}
-.acc-page-options div.schedule-wrap[show='true']{
+.sam-page-options div.schedule-wrap[show='true']{
     display: flex; 
     flex-direction: column; 
     margin-top: 20px;
@@ -76,7 +76,7 @@
 }
 
 .toggler-wrapper input[type="checkbox"]:checked+.toggler-slider {
-	background-color: var(--acc-primary-color);
+	background-color: var(--sam-primary-color);
 }
 
 .toggler-wrapper .toggler-slider {
@@ -109,11 +109,11 @@
 	top: 3px;
 	background-color: #fff;
 }
-.acc-page-options{
+.sam-page-options{
     table-layout: fixed;
     width: 100%;
 }
-.acc-page-options td{vertical-align: top;}
+.sam-page-options td{vertical-align: top;}
 @media (max-width: 782px){
     .access-manager-wrapper{
         grid-template-columns: 1fr;

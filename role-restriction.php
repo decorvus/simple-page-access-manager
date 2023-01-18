@@ -11,11 +11,11 @@
 define('SAM_PLUGIN_PATH', plugin_dir_url( __FILE__ ));
 define('SAM_PLUGIN_FILE', SAM_PLUGIN_PATH.'role-restriction.php');
 include_once( plugin_dir_path( __FILE__ ) . 'updater.php');
-$updater = new Page_role_restriction_updater( __FILE__ ); 
+$updater = new Simple_page_access_manager_updater( __FILE__ ); 
 $updater->set_username( 'decorvus' ); 
 $updater->set_repository( 'simple-page-access-manager' ); 
 $updater->initialize(); 
-if( ! class_exists( 'Page_role_restriction_updater' ) ){
+if( ! class_exists( 'Simple_page_access_manager_updater' ) ){
 	include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
 }
 if(!function_exists('sam_admin_enqueue_scripts')){
